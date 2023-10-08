@@ -1,0 +1,9 @@
+:root {
+    --clr-white: hsl(0,0%,98%);
+    --clr-gray: hsl(0,0%,41%);
+    --clr-black: hsl(0,0%,8%);
+    /* font */
+    --fs-body:1.125rem;
+    --fw-500: 500;
+    --fw-700: 700;
+}

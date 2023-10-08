@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./src/css/main.css" />
+</head>
+
+<body class="body">
+  <!-- header-->
+  <header class="header">
+    <div class="logo-text">snap</div>
+    <button class="button-one" aria-controls="primary-navigation" aria-expanded="false">
+      <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="50">
+        <rect class="line top" width="70" height="5" x="10" y="25" rx="5"></rect>
+        <rect class="line middle" width="70" height="5" x="10" y="45" rx="5"></rect>
+        <rect class="line bottom" width="70" height="5" x="10" y="65" rx="5"></rect>
+      </svg>
+    </button>
+    <!-- hidden nav -->
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <li class="nav-items ">
+          <div class="dropdown">
+
+            <p>features</p>
+            <i class="arrow-icon ">
+              <svg class="arrow-up" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+              </svg>
+              
+              <svg class="arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+              </svg>
+            </i>
+          </div>
+          <!-- hidden icons -->
+          <div class="features-list">
+            <div class="img-con">
+              <img src="./images/icon-todo.svg" alt="icon-todo">
+              <p>todo list</p>
+            </div>
+            <div class="img-con">
+              <img src="./images/icon-calendar.svg" alt="icon-calendar">
+              <p>calender</p>
+            </div>
+              <div class="img-con">
+              <img src="./images/icon-reminders.svg" alt="icon-reminders">
+              <p>calender</p>
+            </div>
+              <div class="img-con">
+              <img src="./images/icon-planning.svg" alt="icon-planning">
+              <p>planning</p>
+            </div>
+          </div>
+          <!-- end of hidden icons -->
+        </li>
+        <li class="nav-items">
+          <div class="dropdown ">
+            <p>company</p>
+            <i class="arrow-icon">
+              <svg class="arrow-up" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+              </svg>
+  
+              <svg class="arrow-down" width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+              </svg>
+            </i>
+          </div>
+            <div class="features-list">
+              <p>history</p>
+              <p>our team</p>
+              <p>blog</p>
+            </div>
+        </li>
+        <li class="nav-items">careers</li>
+        <li class="nav-items">about</li>
+      </ul>
+      <div class="nav-buttons">
+        <button class="btn login">login</button>
+        <button class="btn register">register</button>
+      </div>
+    </nav>
+    <!-- end hidden nav -->
+  </header>
+  <!-- header end -->
+  <main class="container">
+    <div class="hero">
+      <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" class="hero-img" />
+    </div>
+    <h1 class="title">Make remote work</h1>
+    <p class="title-desc">
+      get your team in sync, no matter your location. streamline processes,
+      create team rituals, and watch productivity soar.
+    </p>
+    <button class="learn-more">Learn more</button>
+    <div class="logos">
+      <img src="./images/client-databiz.svg" alt="client-databiz" class="logos-img" />
+      <img src="./images/client-audiophile.svg" alt="client-audiophile" class="logos-img" />
+      <img src="./images/client-meet.svg" alt="client-meet" class="logos-img" />
+      <img src="./images/client-maker.svg" alt="client-maker" class="logos-img" />
+    </div>
+  </main>
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>
